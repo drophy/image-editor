@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Icon by Squarecup LTD - https://icon-icons.com/icon/picture-photo-image/131252 -->
+    <link rel="shortcut icon" href="assets/picture.ico" type="image/x-icon">
+    <title>Image Editor</title>
+
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div id="fullpage-container">
+
+        <!-- LEFT SIDE -->
+        <div id="left-container">
+            <h1>Image Editor :3</h1>
+            <div id="canvas-container">
+                <!-- p5 canvas will go here -->
+            </div>
+            <div id="dropzone">Upload image</div>
+            <button id="download-button">Download</button>
+        </div>
+
+        <!-- RIGHT SIDE -->
+        <div id="right-container">
+            <div id="slider-container">
+                <div id="red-slider-container">
+                    <p>Red</p>
+                </div>
+                <div id="green-slider-container">
+                    <p>Green</p>
+                </div>
+                <div id="blue-slider-container">
+                    <p>Blue</p>
+                </div>
+                <div id="bright-slider-container">
+                    <p>Brightness</p>
+                </div>
+                <div id="preset-button-row" class="button-row">
+                    <button class="square-button selected" data-preset="none">None</button>
+                    <button class="square-button" data-preset="grey">Grayscale</button>
+                    <button class="square-button" data-preset="bw">Black & White</button>
+                    <button class="square-button" data-preset="sc">Single color</button>
+                </div>
+                <div id="extra-settings">
+                    <p>Color</p>
+                    <div id="current-color"></div>
+                    <p>Tolerance</p>
+                    <input type="range" id="tolerance" min=0 max=300 value=10>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- SCRIPTS -->
+    <script src="js/p5.min.js"></script>
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
